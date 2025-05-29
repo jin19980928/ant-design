@@ -70,7 +70,7 @@ Common props ref：[Common props](/docs/react/common-props)
 | switcherIcon | Customize expand/collapse icons for tree nodes (With default rotate angular style) | ReactNode \| ((props: AntTreeNodeProps) => ReactNode) | - | renderProps: 4.20.0 |
 | switcherLoadingIcon | Customize loading icons for tree nodes | ReactNode | - | 5.20.0 |
 | titleRender | Customize tree node title render | (nodeData) => ReactNode | - | 4.5.0 |
-| treeData | The treeNodes data Array, if set it then you need not to construct children TreeNode. (key should be unique across the whole array) | array&lt;{ key, title, children, \[disabled, selectable] }> | - |  |
+| treeData | The treeNodes data Array, if set it then you need not to construct children TreeNode. (key should be unique across the whole array) | array&lt;{ key, title, name, children, \[disabled, selectable] }> | - |  |
 | virtual | Disable virtual scroll when set to false | boolean | true | 4.1.0 |
 | onCheck | Callback function for when the onCheck event occurs | function(checkedKeys, e:{checked: boolean, checkedNodes, node, event, halfCheckedKeys}) | - |  |
 | onDragEnd | Callback function for when the onDragEnd event occurs | function({event, node}) | - |  |
@@ -96,6 +96,7 @@ Common props ref：[Common props](/docs/react/common-props)
 | key | Used with (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys. P.S.: It must be unique in all of treeNodes of the tree | string | (internal calculated position of treeNode) |  |
 | selectable | Set whether the treeNode can be selected | boolean | true |  |
 | title | Title | ReactNode | `---` |  |
+| name | Name | ReactNode | `---` |  |
 
 ### DirectoryTree props
 

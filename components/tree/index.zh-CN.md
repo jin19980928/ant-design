@@ -72,7 +72,7 @@ demo:
 | switcherIcon | 自定义树节点的展开/折叠图标（带有默认 rotate 角度样式） | ReactNode \| ((props: AntTreeNodeProps) => ReactNode) | - | renderProps: 4.20.0 |
 | switcherLoadingIcon | 自定义树节点的加载图标 | ReactNode | - | 5.20.0 |
 | titleRender | 自定义渲染节点 | (nodeData) => ReactNode | - | 4.5.0 |
-| treeData | treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（key 在整个树范围内唯一） | array&lt;{key, title, children, \[disabled, selectable]}> | - |  |
+| treeData | treeNodes 数据，如果设置则不需要手动构造 TreeNode 节点（key 在整个树范围内唯一） | array&lt;{key, title, name, children, \[disabled, selectable]}> | - |  |
 | virtual | 设置 false 时关闭虚拟滚动 | boolean | true | 4.1.0 |
 | onCheck | 点击复选框触发 | function(checkedKeys, e:{checked: boolean, checkedNodes, node, event, halfCheckedKeys}) | - |  |
 | onDragEnd | dragend 触发时调用 | function({event, node}) | - |  |
@@ -98,6 +98,7 @@ demo:
 | key | 被树的 (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys 属性所用。注意：整个树范围内的所有节点的 key 值不能重复！ | string | (内部计算出的节点位置) |  |
 | selectable | 设置节点是否可被选中 | boolean | true |  |
 | title | 标题 | ReactNode | `---` |  |
+| name | 名称 | ReactNode | `---` |  |
 
 ### DirectoryTree props
 
